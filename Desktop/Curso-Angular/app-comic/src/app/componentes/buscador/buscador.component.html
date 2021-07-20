@@ -1,0 +1,11 @@
+<h1>{{termino}} <small>Marvel y DDC</small></h1>
+<hr>
+
+<div class="card-columns">
+    <app-heroe-tarjeta [heroe]="foo" [index]="foo.idx" *ngFor="let foo of heroes; let i = index"></app-heroe-tarjeta>
+
+</div>
+
+<div class="alert alert-info animated fadeIn " role="alert" *ngIf="heroes.length == 0">
+    <p>No existen busquedas semejantes con el termino {{termino}}</p>
+</div>
